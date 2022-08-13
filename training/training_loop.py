@@ -26,6 +26,23 @@ from torch_utils.ops import grid_sample_gradfix
 import legacy
 from metrics import metric_main
 
+# from GPUtil import showUtilization as gpu_usage
+# from numba import cuda
+
+# def free_gpu_cache():
+#     print("Initial GPU Usage")
+#     gpu_usage()                             
+
+#     torch.cuda.empty_cache()
+
+#     cuda.select_device(0)
+#     cuda.close()
+#     cuda.select_device(0)
+
+#     print("GPU Usage after emptying the cache")
+#     gpu_usage()
+
+# free_gpu_cache()
 #----------------------------------------------------------------------------
 
 def setup_snapshot_image_grid(training_set, random_seed=0):
